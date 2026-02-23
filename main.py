@@ -42,9 +42,9 @@ class TicTacToe:
             if self.turn == self.you:
                 move = input("Enter a move (row,col): ")
                 if self.check_valid_move(move.split(',')):
+                    client.send(move.encode('utf-8')) #turns the string into bytes and sends it to the client
                     self.apply_move(move.split(','), self.you)
                     self.turn = self.opponent
-                    client.send(move.encode('utf-8')) #turns the string into bytes and sends it to the client
                 else: 
                     print("Invalid move!")
             #Recieving opponent's move
@@ -117,7 +117,9 @@ class TicTacToe:
                 print("-----------")
     
 
-    
+#Executing the code
+game = TicTacToe()
+game.host_game("localhost", 9999) #We're doing localhost since we're testing on the same device
 
 
 
