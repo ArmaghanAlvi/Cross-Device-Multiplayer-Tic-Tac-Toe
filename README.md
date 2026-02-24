@@ -37,6 +37,5 @@ The goal of this project was to explore sockets and basic networking. I learned:
 
 
 ## Acknowledgements
-This project was made based on <a href="https://machinelearningmastery.com/machine-learning-in-python-step-by-step/">this</a> post by Jason Brownlee.
 
 
