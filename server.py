@@ -16,7 +16,6 @@ class TicTacToe:
     #Function for the host 
     def host_game(self, host, port):
         server = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #Socket with intenrnet communication, TCP socket - maintains connection
-        
         server.bind((host, port)) #Binding host socket to a port
         server.listen(1) #Allows server to accept connections (backlog 1 - aka, can have 1 pending connection in the queue)
 
