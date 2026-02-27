@@ -24,7 +24,6 @@ In order to run the program between two devices, make sure each has a copy of th
 
 ### Built with:
 **Language used:** Python  
-
 **Python libraries:**
 * socket
 * threading
